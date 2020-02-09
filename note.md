@@ -6,6 +6,11 @@ AEADオブジェクト
 
 https://github.com/chromium/chromium/blob/master/crypto/aead.cc
 
+Google Git　のリポジトリ（baseフォルダ）
+
+https://chromium.googlesource.com/chromium/src/+/refs/heads/master/base
+
+
 ### AESで暗号化されているパートの復号
 https://github.com/chromium/chromium/blob/57ae3550aeedf85faf04fe92c5a6d183e77c5c86/components/os_crypt/os_crypt_win.cc#L161
 
