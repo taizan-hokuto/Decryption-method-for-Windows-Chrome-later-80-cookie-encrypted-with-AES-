@@ -44,3 +44,16 @@ const size_t kNonceLength = 96 / 8
 ```
 ## nonceの位置
 cypher_txt の先頭からバージョン表記（V10）を除いて12バイト
+
+## Key
+
+[cookie_store_util.cc](https://github.com/chromium/chromium/blob/master/components/cookie_config/cookie_store_util.cc)
+
+[DecryptString](https://github.com/chromium/chromium/blob/75c6482a2ad46970621ba6bd9b828f115fabd284/components/os_crypt/os_crypt_win.cc#L161)
+
+[GetEncryptionKeyInternal](https://github.com/chromium/chromium/blob/75c6482a2ad46970621ba6bd9b828f115fabd284/components/os_crypt/os_crypt_win.cc#L101)
+
+[GetEncryptionKeyFactory](https://github.com/chromium/chromium/blob/75c6482a2ad46970621ba6bd9b828f115fabd284/components/os_crypt/os_crypt_win.cc#L47)
+
+
+[wincrypt_shim.h](https://chromium.googlesource.com/chromium/src/+/refs/heads/master/base/win/wincrypt_shim.h)
