@@ -25,3 +25,12 @@ AE モードの典型的な API は次のような関数を提供する:
 Galois/Counter Mode (GCM)は、ブロック暗号の暗号利用モードの一つであり、認証付き暗号の一つである。
 
 https://github.com/chromium/chromium/blob/master/crypto/aead.cc
+
+
+## nonceの長さ
+12
+```c
+const size_t kNonceLength = 96 / 8
+```
+## nonceの位置
+cypher_txt の先頭からバージョン表記（V10）を除いて12バイト
