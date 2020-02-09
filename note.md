@@ -55,5 +55,8 @@ cypher_txt の先頭からバージョン表記（V10）を除いて12バイト
 
 [GetEncryptionKeyFactory](https://github.com/chromium/chromium/blob/75c6482a2ad46970621ba6bd9b828f115fabd284/components/os_crypt/os_crypt_win.cc#L47)
 
-
 [wincrypt_shim.h](https://chromium.googlesource.com/chromium/src/+/refs/heads/master/base/win/wincrypt_shim.h)
+
+[network_service.cc](https://github.com/chromium/chromium/blob/master/services/network/network_service.cc)
+
+[system_network_context_manager.cc](https://github.com/chromium/chromium/blob/master/chrome/browser/net/system_network_context_manager.cc)
