@@ -9,9 +9,9 @@ https://github.com/chromium/chromium/blob/master/crypto/aead.cc
 ### AESで暗号化されているパートの復号
 https://github.com/chromium/chromium/blob/57ae3550aeedf85faf04fe92c5a6d183e77c5c86/components/os_crypt/os_crypt_win.cc#L161
 
-暗号文の先頭が「0x01」→ DPAPIで暗号化
+暗号文の先頭が「0x01 00 00 00」→ DPAPIで暗号化
 
-暗号文の先頭が「V10」 → AESで暗号化
+暗号文の先頭が「v10」 → AESで暗号化
 
 
 ### AEAD
