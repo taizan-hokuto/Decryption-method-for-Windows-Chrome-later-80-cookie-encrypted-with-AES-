@@ -34,15 +34,12 @@ AE モードの典型的な API は次のような関数を提供する:
 ## AES_256_GCM
 「Galois/Counter Mode (GCM)は、ブロック暗号の暗号利用モードの一つであり、認証付き暗号の一つである。」
 
-original keyとNonceを一緒にハッシュにかけて生成したnew keyを使って平文を暗号化
-→暗号文にNonceを付けてサーバーに送る
-→サーバー側は original keyとNonceを使って暗号文を復号。
-→復号できれば、keyが真正であること、およびNonceがつけられた元のデータに改ざんがないことが証明できる(？)
+復号するには、original keyだけでなくNonceも必要。
 
-## nonceの位置
-cypher_txt の先頭からバージョン表記（V10）を除いた4バイト目以降。
+## Nonceの位置
+各暗号化cookieデータ の先頭からバージョン表記（'v10'）を除いた4バイト目以降。
 
-## nonceの長さ
+## Nonceの長さ
 12
 ```c
 const size_t kNonceLength = 96 / 8
