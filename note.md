@@ -60,3 +60,7 @@ cypher_txt の先頭からバージョン表記（V10）を除いて12バイト
 [network_service.cc](https://github.com/chromium/chromium/blob/master/services/network/network_service.cc)
 
 [system_network_context_manager.cc](https://github.com/chromium/chromium/blob/master/chrome/browser/net/system_network_context_manager.cc)
+
+[content::GetNetwrkService()](https://github.com/chromium/chromium/search?p=2&q=GetNetworkService&unscoped_q=GetNetworkService)
+
+[network_service_instance.h](https://github.com/chromium/chromium/blob/master/content/public/browser/network_service_instance.h)
