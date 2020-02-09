@@ -32,18 +32,22 @@ AE モードの典型的な API は次のような関数を提供する:
  - - 出力: 平文、あるいは、認証タグが暗号文とヘッダに合致しない場合はエラー
 
 ## AES_256_GCM
-Galois/Counter Mode (GCM)は、ブロック暗号の暗号利用モードの一つであり、認証付き暗号の一つである。
+「Galois/Counter Mode (GCM)は、ブロック暗号の暗号利用モードの一つであり、認証付き暗号の一つである。」
 
-https://github.com/chromium/chromium/blob/master/crypto/aead.cc
+original keyとNonceを一緒にハッシュにかけて生成したnew keyを使って平文を暗号化
+→暗号文にNonceを付けてサーバーに送る
+→サーバー側は original keyとNonceを使って暗号文を復号。
+→復号できれば、keyが真正であること、およびNonceがつけられた元のデータに改ざんがないことが証明できる(？)
 
+## nonceの位置
+cypher_txt の先頭からバージョン表記（V10）を除いた4バイト目以降。
 
 ## nonceの長さ
 12
 ```c
 const size_t kNonceLength = 96 / 8
 ```
-## nonceの位置
-cypher_txt の先頭からバージョン表記（V10）を除いて12バイト
+
 
 ## Key
 
