@@ -1,12 +1,8 @@
-
-
 ### AESで暗号化されているパートの復号
-https://github.com/chromium/chromium/blob/57ae3550aeedf85faf04fe92c5a6d183e77c5c86/components/os_crypt/os_crypt_win.cc#L161
 
 暗号文の先頭が「0x01 00 00 00」→ DPAPIで暗号化
 
 暗号文の先頭が「v10」 → AESで暗号化
-
 
 ### AEAD
 Authenticated Encryption with Associated Data)(認証付き暗号化)
@@ -73,6 +69,8 @@ DPAPIでの復号に失敗する場合はerror 13が返る。
 chromiumのソース
 
 https://github.com/chromium/chromium/blob/master/components/os_crypt/os_crypt_win.cc
+
+https://github.com/chromium/chromium/blob/57ae3550aeedf85faf04fe92c5a6d183e77c5c86/components/os_crypt/os_crypt_win.cc#L161
 
 AEADオブジェクト
 
