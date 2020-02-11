@@ -63,12 +63,25 @@ encrypted_keyデータを格納しているデータ。
 DPAPIを使って復号する。
 
 ## Decryption key
-Local Stateから得られた文字列をBase64デコードし
+
+Local Stateから得られた文字列をBase64デコードする。
 先頭が’DPAPI’ならばDPAPIで暗号化されている。
 
 6バイト目以降をDPAPIを使って復号する。
 
-複号後の平文は256bitであるはず。
+復号後の平文は256bitとなるはず。
+
+DPAPIでの復号に失敗する場合はerror 13が返る。
+
+## Decryption encrypted value
+
+上の手順で得られたkeyと、Nonceを使って、AES_256_GCMにより暗号文を復号する。
+
+復号対象はv10およびNonceを除いた部分であることに注意。
+
+
+
+
 
 
 
