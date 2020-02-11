@@ -57,7 +57,10 @@ const size_t kNonceLength = 96 / 8
 ``'os_encrypt -> encrypted key'``
 
 の先頭から29バイトを飛ばして30バイト目以降が
-BASE64でencodeされたkeyデータ。
+encrypted_keyデータを格納しているデータ。
+
+これをBASE64でデコードしたうえで
+DPAPIを使って復号する？
 
 
 [cookie_store_util.cc](https://github.com/chromium/chromium/blob/master/components/cookie_config/cookie_store_util.cc)
