@@ -48,10 +48,13 @@ const size_t kNonceLength = 96 / 8
 
 ## Key
 
-C:\Users\{username}\AppData\Local\Google\Chrome\User Data\Local State
+'''C:\Users\{username}\AppData\Local\Google\Chrome\User Data\Local State```
 （jsonファイルになっている）
+
 の中の
-'os_encrypt -> encrypted key'
+
+``'os_encrypt -> encrypted key'``
+
 の先頭から29バイトを飛ばして30バイト目以降が
 BASE64でencodeされたkeyデータ。
 
