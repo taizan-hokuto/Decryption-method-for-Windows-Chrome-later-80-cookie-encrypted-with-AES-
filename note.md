@@ -60,7 +60,16 @@ const size_t kNonceLength = 96 / 8
 encrypted_keyデータを格納しているデータ。
 
 これをBASE64でデコードしたうえで
-DPAPIを使って復号する？
+DPAPIを使って復号する。
+
+## Decryption key
+Local Stateから得られた文字列をBase64デコードし
+先頭が’DPAPI’ならばDPAPIで暗号化されている。
+
+6バイト目以降をDPAPIを使って復号する。
+
+複号後の平文は256bitであるはず。
+
 
 
 [cookie_store_util.cc](https://github.com/chromium/chromium/blob/master/components/cookie_config/cookie_store_util.cc)
