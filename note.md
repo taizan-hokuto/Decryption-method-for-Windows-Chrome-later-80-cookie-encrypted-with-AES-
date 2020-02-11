@@ -56,7 +56,7 @@ const size_t kNonceLength = 96 / 8
 
 ``'os_encrypt -> encrypted key'``
 
-の先頭から29バイトを飛ばして30バイト目以降が
+が
 encrypted_keyデータを格納しているデータ。
 
 これをBASE64でデコードしたうえで
