@@ -74,6 +74,10 @@ BASE64でencodeされたkeyデータ。
 
 [system_network_context_manager.cc](https://github.com/chromium/chromium/blob/master/chrome/browser/net/system_network_context_manager.cc)
 
+
+[kuhl_m_dpapi_chrome_alg_key_from_b64](https://github.com/gentilkiwi/mimikatz/compare/2.2.0-20200104...2.2.0-20200208#diff-a9d628d2ebef21afa6489a3aa90c5f04)
+
 [content::GetNetwrkService()](https://github.com/chromium/chromium/search?p=2&q=GetNetworkService&unscoped_q=GetNetworkService)
 
 [network_service_instance.h](https://github.com/chromium/chromium/blob/master/content/public/browser/network_service_instance.h)
+
