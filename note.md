@@ -1,14 +1,3 @@
-chromiumのソース
-
-https://github.com/chromium/chromium/blob/master/components/os_crypt/os_crypt_win.cc
-
-AEADオブジェクト
-
-https://github.com/chromium/chromium/blob/master/crypto/aead.cc
-
-Google Git　のリポジトリ（baseフォルダ）
-
-https://chromium.googlesource.com/chromium/src/+/refs/heads/master/base
 
 
 ### AESで暗号化されているパートの復号
@@ -81,8 +70,17 @@ DPAPIでの復号に失敗する場合はerror 13が返る。
 
 
 
+chromiumのソース
 
+https://github.com/chromium/chromium/blob/master/components/os_crypt/os_crypt_win.cc
 
+AEADオブジェクト
+
+https://github.com/chromium/chromium/blob/master/crypto/aead.cc
+
+Google Git　のリポジトリ（baseフォルダ）
+
+https://chromium.googlesource.com/chromium/src/+/refs/heads/master/base
 
 
 [cookie_store_util.cc](https://github.com/chromium/chromium/blob/master/components/cookie_config/cookie_store_util.cc)
