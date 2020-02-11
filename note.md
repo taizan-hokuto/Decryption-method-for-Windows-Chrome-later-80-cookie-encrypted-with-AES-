@@ -49,6 +49,7 @@ const size_t kNonceLength = 96 / 8
 ## Key
 
 '''C:\Users\{username}\AppData\Local\Google\Chrome\User Data\Local State```
+
 （jsonファイルになっている）
 
 の中の
