@@ -48,6 +48,14 @@ const size_t kNonceLength = 96 / 8
 
 ## Key
 
+C:\Users\{username}\AppData\Local\Google\Chrome\User Data\Local State
+（jsonファイルになっている）
+の中の
+'os_encrypt -> encrypted key'
+の先頭から29バイトを飛ばして30バイト目以降が
+BASE64でencodeされたkeyデータ。
+
+
 [cookie_store_util.cc](https://github.com/chromium/chromium/blob/master/components/cookie_config/cookie_store_util.cc)
 
 [DecryptString](https://github.com/chromium/chromium/blob/75c6482a2ad46970621ba6bd9b828f115fabd284/components/os_crypt/os_crypt_win.cc#L161)
